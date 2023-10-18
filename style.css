@@ -1,12 +1,26 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
 #grid-container{
     display: grid;
     grid-template-columns: repeat(10,minmax(5px,5fr));
+    grid-gap: 20px;
+    max-width: 800px;
+    padding : 20px;
+    background-color: #fff
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0.1)
   }
   #grid-container div{
      text-align:center;
      border:1px solid black;
-    margin:2px;
-    background-color:white;
+     margin:2px;
+     background-color:white;
   }
   #button button{
       width:100px;
